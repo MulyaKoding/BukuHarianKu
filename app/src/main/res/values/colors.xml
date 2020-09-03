@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#137BAA</color>
+    <color name="colorPrimaryDark">#002080</color>
+    <color name="colorAccent">#00B0FF</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorText">#F7F2F2</color>
+    <color name="colorTextHeader">#000000</color>
+    <color name="colorLine">#000000</color>
+    <color name="textColor">#000000</color>
+
+
+    <color name="Indeks_A">#0AB853</color>
+    <color name="Indeks_AB">#2E9F32</color>
+    <color name="Indeks_B">#0A930F</color>
+    <color name="Indeks_BC">#CDDC39</color>
+    <color name="Indeks_C">#FFC107</color>
+    <color name="Indeks_D">#F44336</color>
+    <color name="Indeks_E">#FF0713</color>
+
+</resources>

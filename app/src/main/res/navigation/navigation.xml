@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.d3if4034.bukuharianku.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_mainPengalamanFragment"
+            app:destination="@id/mainPengalamanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_daftarBelanjaHarianFragment"
+            app:destination="@id/daftarBelanjaHarianFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPengalamanFragment"
+        android:name="org.d3if4034.bukuharianku.ui.home.MainPengalamanFragment"
+        android:label="Home Pengalaman"
+        tools:layout="@layout/fragment_main_pengalaman">
+        <action
+            android:id="@+id/action_mainPengalamanFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mainPengalamanFragment_to_tambahPengalamanFragment"
+            app:destination="@id/tambahPengalamanFragment" />
+        <action
+            android:id="@+id/action_mainPengalamanFragment_to_editPengalamanFragment"
+            app:destination="@id/editPengalamanFragment" />
+        <action
+            android:id="@+id/action_mainPengalamanFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment2"
+        android:name="org.d3if4034.bukuharianku.ui.home.AboutFragment"
+        android:label="About Apps"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_aboutFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahPengalamanFragment"
+        android:name="org.d3if4034.bukuharianku.ui.add.TambahPengalamanFragment"
+        android:label="Tambah Pengalaman"
+        tools:layout="@layout/fragment_tambah_pengalaman">
+        <action
+            android:id="@+id/action_tambahPengalamanFragment_to_mainPengalamanFragment"
+            app:destination="@id/mainPengalamanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPengalamanFragment"
+        android:name="org.d3if4034.bukuharianku.ui.edit.EditPengalamanFragment"
+        android:label="Edit Pengalaman"
+        tools:layout="@layout/fragment_edit_pengalaman">
+        <action
+            android:id="@+id/action_editPengalamanFragment_to_mainPengalamanFragment"
+            app:destination="@id/mainPengalamanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daftarBelanjaHarianFragment"
+        android:name="org.d3if4034.bukuharianku.ui.DaftarBelanjaHarianFragment"
+        android:label="Daftar Belanja Harian"
+        tools:layout="@layout/fragment_daftar_belanja_harian">
+        <action
+            android:id="@+id/action_daftarBelanjaHarianFragment_to_tambahPembayaranFragment"
+            app:destination="@id/tambahPembayaranFragment" />
+        <action
+            android:id="@+id/action_daftarBelanjaHarianFragment_to_listPembayaranFragment"
+            app:destination="@id/listPembayaranFragment" />
+        <action
+            android:id="@+id/action_daftarBelanjaHarianFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_daftarBelanjaHarianFragment_to_listBarangFragment"
+            app:destination="@id/listBarangFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahPembayaranFragment"
+        android:name="org.d3if4034.bukuharianku.ui.TambahPembayaranFragment"
+        android:label="Tambah Pembayaran"
+        tools:layout="@layout/fragment_tambah_pembayaran">
+        <action
+            android:id="@+id/action_tambahPembayaranFragment_to_daftarBelanjaHarianFragment"
+            app:destination="@id/daftarBelanjaHarianFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listPembayaranFragment"
+        android:name="org.d3if4034.bukuharianku.ui.ListPembayaranFragment"
+        android:label="List Pembayaran Barang"
+        tools:layout="@layout/fragment_list_pembayaran">
+        <action
+            android:id="@+id/action_listPembayaranFragment_to_daftarBelanjaHarianFragment"
+            app:destination="@id/daftarBelanjaHarianFragment" />
+        <action
+            android:id="@+id/action_listPembayaranFragment_to_editPembayaranFragment"
+            app:destination="@id/editPembayaranFragment" />
+        <action
+            android:id="@+id/action_listPembayaranFragment_to_riwayatPembayaranFragment"
+            app:destination="@id/riwayatPembayaranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/riwayatPembayaranFragment"
+        android:name="org.d3if4034.bukuharianku.ui.RiwayatPembayaranFragment"
+        android:label="Riwayat Pembayaran Barang"
+        tools:layout="@layout/fragment_riwayat_pembayaran">
+        <action
+            android:id="@+id/action_riwayatPembayaranFragment_to_listPembayaranFragment"
+            app:destination="@id/listPembayaranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPembayaranFragment"
+        android:name="org.d3if4034.bukuharianku.ui.EditPembayaranFragment"
+        android:label="Edit Pembayaran Barang"
+        tools:layout="@layout/fragment_edit_pembayaran">
+        <action
+            android:id="@+id/action_editPembayaranFragment_to_listPembayaranFragment"
+            app:destination="@id/listPembayaranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listBarangFragment"
+        android:name="org.d3if4034.bukuharianku.ui.ListBarangFragment"
+        android:label="List Barang"
+        tools:layout="@layout/fragment_list_barang">
+        <action
+            android:id="@+id/action_listBarangFragment_to_detailBarangFragment"
+            app:destination="@id/detailBarangFragment" />
+        <action
+            android:id="@+id/action_listBarangFragment_to_daftarBelanjaHarianFragment"
+            app:destination="@id/daftarBelanjaHarianFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailBarangFragment"
+        android:name="org.d3if4034.bukuharianku.ui.DetailBarangFragment"
+        android:label="Detail Barang"
+        tools:layout="@layout/fragment_detail_barang">
+        <action
+            android:id="@+id/action_detailBarangFragment_to_listBarangFragment"
+            app:destination="@id/listBarangFragment" />
+    </fragment>
+</navigation>

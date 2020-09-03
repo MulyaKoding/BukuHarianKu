@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.DaftarBelanjaHarianFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagev3"
+                android:layout_width="366dp"
+                android:layout_height="273dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/gambar_buku_pengalaman"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+                app:srcCompat="@drawable/mainhome" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="413dp"
+                android:layout_height="214dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-2dp">
+
+                <LinearLayout
+                    android:id="@+id/main_identity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_apps_identity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_identity"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_rounded_card_blue"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_Bukuharianku"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Hallo apa kabar?"
+                        android:text="@string/hallo_apa_kabar"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Deskripsi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/di_aplikasi_buku_harianku"
+                        android:text="@string/di_aplikasi_buku_harianku"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_deskripsi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Mari kita mendata daftar belanja harian kita dan melihat daftar barang agar bisa menghemat uang kamu"
+                        android:text="@string/mari_kita_mendata_daftar_belanja_harian_kita_dan_melihat_daftar_barang_agar_bisa_menghemat_uang_kamu"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/main_label_for_you"
+                    android:layout_width="397dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/main_apps_identity"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/untuk_kamu"
+                    android:text="@string/untuk_kamu"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/main_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_label_for_you"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_tambah"
+                android:layout_width="228dp"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimary"
+                android:contentDescription="Tambah Pembayaran"
+                android:text="@string/tambah_pembayaran"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagev3"
+                app:layout_constraintVertical_bias="0.037" />
+
+
+            <Button
+                android:id="@+id/btn_lihatDaftar"
+                android:layout_width="219dp"
+                android:layout_height="54dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorPrimary"
+                android:contentDescription="Lihat Daftar Pembayaran"
+                android:text="@string/lihat_daftar_pembayaran"
+                android:textColor="@color/colorText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_tambah" />
+
+            <Button
+                android:id="@+id/btn_lihatBarang"
+                android:layout_width="219dp"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorPrimary"
+                android:contentDescription="Lihat Daftar Barang"
+                android:text="@string/lihat_daftar_barang"
+                android:textColor="@color/colorText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_lihatDaftar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>
