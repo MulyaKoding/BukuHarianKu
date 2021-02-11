@@ -15,12 +15,12 @@ val moshi: Moshi = Moshi.Builder()
 
 private val retrofit = Retrofit.Builder()
     .addConverterFactory(MoshiConverterFactory.create(moshi))
-    .baseUrl("https://extendsclass.com/api/json-storage/bin/")
+    .baseUrl("https://jsonplaceholder.typicode.com/todos/{id}")
     .build()
 
 //API
 interface BarangService {
-    @GET("dcdbecc")
+    @GET("https://jsonplaceholder.typicode.com/todos")
     suspend fun showList(): List<Barang>
 }
 
